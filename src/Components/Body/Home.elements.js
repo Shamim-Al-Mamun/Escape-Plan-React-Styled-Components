@@ -6,7 +6,7 @@ import { primaryColor, primaryColorDark, textColor } from "../../globalStyles";
 export const HomeContainer = styled.div`
   background-image: url(${homeCoverPhoto});
   width: 100%;
-  height: 90vh;
+  height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
@@ -42,7 +42,7 @@ export const HomeDiv = styled.div`
   text-shadow: 5px 5px 10px black;
   @media (max-width: 760px) {
     font-size: 1rem;
-    margin-top: 2rem;
+    margin-top: 5rem;
   }
 `;
 export const HomeTitle = styled.div`

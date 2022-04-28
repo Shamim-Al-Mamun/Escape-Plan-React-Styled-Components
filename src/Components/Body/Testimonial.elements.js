@@ -12,6 +12,7 @@ export const Testimonialcontainer = styled.div`
   width: 90%;
   margin: auto;
   margin-top: 3rem;
+  margin-bottom: 3rem;
   height: 30vh;
   border-radius: 0.5rem;
   @media screen and (max-width: 960px) {

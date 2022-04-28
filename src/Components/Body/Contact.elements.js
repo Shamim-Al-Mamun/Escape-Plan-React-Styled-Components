@@ -1,6 +1,7 @@
 import styled from "styled-components";
 export const ContactContainer = styled.div`
   margin-top: 2rem;
+  margin-bottom: 5rem;
   width: 100%;
   height: 60vh;
   @media (max-width: 760px) {
