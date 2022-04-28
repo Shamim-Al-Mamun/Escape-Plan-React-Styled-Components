@@ -14,7 +14,6 @@ import {
   Adreess,
   AdreessIcon,
 } from "./Contact.elements";
-import { HomeButton } from "./Home.elements";
 import { FaHome, FaPhone, FaPaperPlane } from "react-icons/fa";
 
 function Contact() {
