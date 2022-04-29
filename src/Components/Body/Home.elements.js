@@ -17,16 +17,21 @@ export const HomeContainer = styled.div`
 `;
 export const HomeSection = styled.div`
   width: 70%;
-  height: 60vh;
+  height: auto;
   display: flex;
   align-items: center;
+  justify-content: center;
   @media (max-width: 760px) {
     width: 90%;
   }
 `;
 export const HomeArticale = styled.div`
+  margin-top: 250px;
   padding: 1rem;
   padding-left: 2rem;
+  @media (max-width: 760px) {
+    margin-top: 100px;
+  }
 `;
 export const HomeButtonDiv = styled.div`
   width: 60%;
@@ -42,7 +47,6 @@ export const HomeDiv = styled.div`
   text-shadow: 5px 5px 10px black;
   @media (max-width: 760px) {
     font-size: 1rem;
-    margin-top: 5rem;
   }
 `;
 export const HomeTitle = styled.div`
@@ -71,6 +75,7 @@ export const HomeButton = styled.button`
   z-index: 1;
   border: none;
   outline: none;
+  user-select: none;
   cursor: pointer;
   &::after {
     content: "";

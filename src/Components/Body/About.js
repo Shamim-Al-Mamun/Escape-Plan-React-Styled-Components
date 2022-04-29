@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import CountUp from "react-countup";
 import {
   AboutContainer,
@@ -28,16 +28,6 @@ import {
   FaBook,
 } from "react-icons/fa";
 function About() {
-  const [counterStart, setCounterStart] = useState(false);
-  useEffect(() => {
-    const startCounter = () => {
-      console.log(window.scrollY);
-      if (window.scrollY >= 375) {
-        setCounterStart(true);
-      }
-    };
-    window.addEventListener("scroll", startCounter);
-  }, []);
   return (
     <>
       <AboutContainer id="about">
@@ -57,7 +47,7 @@ function About() {
           <AboutTourDone>
             <TourDone>
               <TourDoneNumber>
-                {counterStart && <CountUp end={278} duration={5} />}
+                <CountUp end={278} duration={5} />
               </TourDoneNumber>
               <TourCatagory>Tour has done successfully</TourCatagory>
             </TourDone>
@@ -65,7 +55,7 @@ function About() {
           <AboutYearlyTourDone>
             <TourDone>
               <TourDoneNumber>
-                {counterStart && <CountUp end={25} duration={5} />}
+                <CountUp end={25} duration={5} />
               </TourDoneNumber>
               <TourCatagory>Yearly tour arrange</TourCatagory>
             </TourDone>
@@ -73,7 +63,7 @@ function About() {
           <AboutClients>
             <TourDone>
               <TourDoneNumber>
-                {counterStart && <CountUp end={1589} duration={5} />}
+                <CountUp end={1589} duration={5} />
               </TourDoneNumber>
               <TourCatagory>Happy Clients</TourCatagory>
             </TourDone>

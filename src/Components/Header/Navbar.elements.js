@@ -1,7 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import { Container } from "../../globalStyles";
 import { FaMagento } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import {
   primaryColor,
@@ -10,7 +10,7 @@ import {
 } from "../../globalStyles";
 
 const navContainerColor = "rgb(128,128,128, .9)";
-const navColorLight = "rgb(0, 0, 0, .05)";
+const navColorLight = "rgb(0, 0, 0, .3)";
 const navColor = "rgb(0, 0, 0, .5)";
 const move = keyframes`
   from {top: -80px;}

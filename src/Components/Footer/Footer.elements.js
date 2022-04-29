@@ -1,17 +1,17 @@
 import styled from "styled-components";
 import { FaMagento } from "react-icons/fa";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import { primaryColorDark, secondaryColor } from "../../globalStyles";
 export const FooterContainer = styled.div`
   background-color: ${primaryColorDark};
-  padding: 2rem 0 1rem 0;
+  padding: 1rem 0 1rem 0;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   @media (max-width: 760px) {
-    margin-top: 9rem;
-    padding: 1rem 0 0.5rem 0;
+    margin-top: 10rem;
+    padding: 0.8rem 0 0.5rem 0;
   }
 `;
 
@@ -30,7 +30,7 @@ export const FooterSubHeading = styled.p`
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;
   margin-bottom: 1rem;
-  font-size: 1.5rem;
+  font-size: 1.2rem;
   @media (max-width: 760px) {
     margin-bottom: 0.5rem;
     font-size: 1rem;
@@ -39,7 +39,7 @@ export const FooterSubHeading = styled.p`
 
 export const FooterSubText = styled.p`
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   color: ${secondaryColor};
   @media (max-width: 760px) {
     font-size: 0.9rem;
@@ -58,7 +58,7 @@ export const Form = styled.form`
 `;
 
 export const FormInput = styled.input`
-  padding: 10px 20px;
+  padding: 8px 16px;
   border-radius: 2px;
   margin-right: 10px;
   outline: none;
@@ -73,7 +73,7 @@ export const FormInput = styled.input`
   @media screen and (max-width: 820px) {
     width: 100%;
     margin: 0 0 16px 0;
-    padding: 8px 16px;
+    padding: 6px 14px;
   }
 `;
 
@@ -115,13 +115,15 @@ export const FooterLinkItems = styled.div`
 
 export const FooterLinkTitle = styled.h2`
   margin-bottom: 16px;
+  font-size: 1.3rem;
   @media screen and (max-width: 820px) {
-    font-size: 1rem;
+    font-size: 0.8rem;
   }
 `;
 
 export const FooterLink = styled(Link)`
   color: #fff;
+  font-size: 1rem;
   text-decoration: none;
   margin-bottom: 0.5rem;
   cursor: pointer;
@@ -131,7 +133,7 @@ export const FooterLink = styled(Link)`
     transition: 0.3s ease-out;
   }
   @media screen and (max-width: 820px) {
-    font-size: 0.8rem;
+    font-size: 0.6rem;
   }
 `;
 
@@ -171,6 +173,9 @@ export const SocialIcon = styled(FaMagento)`
 export const WebsiteRights = styled.small`
   color: #fff;
   margin-bottom: 16px;
+  @media screen and (max-width: 820px) {
+    font-size: 0.7rem;
+  }
 `;
 
 export const SocialIcons = styled.div`
@@ -183,4 +188,7 @@ export const SocialIcons = styled.div`
 export const SocialIconLink = styled.a`
   color: #fff;
   font-size: 24px;
+  @media screen and (max-width: 820px) {
+    font-size: 22px;
+  }
 `;

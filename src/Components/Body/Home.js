@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 
 import {
   HomeContainer,
@@ -23,7 +23,7 @@ function Home() {
             </HomeDiv>
             <HomeTitle>Make Your Tour Amazing With Us</HomeTitle>
             <HomeButtonDiv>
-              <Link to="packages">
+              <Link to="/packages">
                 <HomeButton>Book Now</HomeButton>
               </Link>
             </HomeButtonDiv>

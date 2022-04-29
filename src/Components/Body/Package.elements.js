@@ -1,4 +1,4 @@
-import { Link } from "react-scroll";
+import { Link } from "react-router-dom";
 import styled from "styled-components";
 import switzeland from "../Images/switzeland.jpg";
 import cox from "../Images/cox.jpg";
@@ -14,8 +14,12 @@ import egypt from "../Images/egypt.jpg";
 import dubai from "../Images/dubai.jpg";
 import portugal from "../Images/portugal.jpg";
 
-import homeCoverPhoto3 from "../Images/homeCoverPhoto3.jpg";
-import { blackLight, primaryColorDark } from "../../globalStyles";
+import packageCoverPhoto from "../Images/packageCoverPhoto.jpg";
+import {
+  blackLight,
+  primaryColorDark,
+  backgroundColor,
+} from "../../globalStyles";
 
 export const PricingSection = styled.div`
   display: flex;
@@ -23,7 +27,9 @@ export const PricingSection = styled.div`
   justify-content: center;
 `;
 export const PackageContainer = styled.div`
-  margin-top: 2rem;
+  background-color: ${backgroundColor};
+  margin-top: 80px;
+  height: 130vh;
 `;
 export const PricingWrapper = styled.div`
   display: flex;
@@ -44,6 +50,7 @@ export const PricingHeading = styled.h1`
   font-weight: 100;
   margin-bottom: 24px;
   font-weight: 100;
+  padding-top: 1rem;
   @media (max-width: 760px) {
     font-size: 1.5rem;
   }
@@ -134,7 +141,8 @@ export const PricingCardFeature = styled.li`
 `;
 export const BookingHeading = styled.div`
   text-align: center;
-  font-size: 2rem;
+  font-size: 2.5rem;
+  font-weight: 100;
   width: 80%;
   margin: auto;
   margin-top: 3rem;
@@ -268,11 +276,12 @@ export const PackageIcon12 = styled.div`
 `;
 
 export const PackageImage = styled.div`
-  background-image: url(${homeCoverPhoto3});
+  background-image: url(${packageCoverPhoto});
   width: 90%;
   margin: auto;
   height: 400px;
   margin-top: 2rem;
+  margin-bottom: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;

@@ -23,7 +23,10 @@ function Navbar() {
     setClick(!click);
     setNavbarOnScroll(true);
   };
-  const closeMobileMenu = () => setClick(false);
+  const closeMobileMenu = () => {
+    setClick(false);
+    setNavbarOnScroll(true);
+  };
 
   //navbar scroll changeBackground function
   const changeBackground = () => {
@@ -31,7 +34,7 @@ function Navbar() {
     if (window.scrollY >= 66) {
       setNavbarOnScroll(true);
     } else {
-      !click && setNavbarOnScroll(false);
+      setNavbarOnScroll(false);
     }
   };
 
@@ -47,7 +50,7 @@ function Navbar() {
       <IconContext.Provider value={{ color: "#fff" }}>
         <Nav navbarOnScroll={navbarOnScroll}>
           <NavbarContainer>
-            <NavLogo to="home" onClick={closeMobileMenu}>
+            <NavLogo to="/" onClick={closeMobileMenu}>
               <NavIcon />
               EscapePlan
             </NavLogo>
@@ -56,31 +59,27 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks to="home" offset={-30} onClick={closeMobileMenu}>
+                <NavLinks to="/" onClick={closeMobileMenu}>
                   Home
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="testimonial"
-                  offset={-80}
-                  onClick={closeMobileMenu}
-                >
+                <NavLinks to="/testimonial" onClick={closeMobileMenu}>
                   Testimonial
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="about" offset={-80} onClick={closeMobileMenu}>
+                <NavLinks to="/about" onClick={closeMobileMenu}>
                   About
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="packages" offset={-80} onClick={closeMobileMenu}>
+                <NavLinks to="/packages" onClick={closeMobileMenu}>
                   Packages
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks to="contact" offset={-80} onClick={closeMobileMenu}>
+                <NavLinks to="/contact" onClick={closeMobileMenu}>
                   Contact
                 </NavLinks>
               </NavItem>

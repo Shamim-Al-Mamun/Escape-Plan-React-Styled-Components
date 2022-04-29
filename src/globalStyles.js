@@ -8,6 +8,7 @@ export const thirdColor = "rgb(128, 0, 32)";
 export const comonColor = "rgb(233, 116, 81)";
 export const blackLight = "rgb(0,0,0, .6)";
 export const textColor = "rgb(255, 251, 231)";
+export const backgroundColor = "rgb(250, 235, 215, 0.3)";
 
 const GlobalStyle = createGlobalStyle`
   * {
@@ -39,7 +40,7 @@ export const Button = styled.button`
   white-space: nowrap;
   padding: ${({ big }) => (big ? "12px 64px" : "10px 20px")};
   color: #fff;
-  font-size: ${({ fontBig }) => (fontBig ? "20px" : "16px")};
+  font-size: ${({ fontBig }) => (fontBig ? "16px" : "16px")};
   outline: none;
   border: none;
   cursor: pointer;

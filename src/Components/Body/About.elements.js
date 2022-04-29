@@ -1,20 +1,21 @@
 import styled from "styled-components";
 import homeCoverPhoto2 from "../Images/homeCoverPhoto2.jpg";
 
-import { primaryColorDark } from "../../globalStyles";
+import { primaryColorDark, backgroundColor } from "../../globalStyles";
 
 export const AboutContainer = styled.div`
+  background-color: ${backgroundColor};
   width: 100%;
-  margin-top: 2rem;
+  margin-top: 80px;
 `;
 export const AboutTitle = styled.h1`
   color: black;
   font-weight: 100;
   font-size: 2rem;
-  /* background: skyblue; */
   width: 85%;
   margin: auto;
-  margin-bottom: 3rem;
+  padding-top: 1rem;
+  margin-bottom: 2rem;
   @media (max-width: 760px) {
     margin-top: 5.5rem;
     margin-bottom: 1.5rem;
@@ -103,7 +104,7 @@ export const AboutActivities = styled.div`
   width: 90%;
   margin: auto;
   margin-top: 3rem;
-  margin-bottom: 2rem;
+  padding-bottom: 2rem;
   @media (max-width: 760px) {
     display: block;
     margin-top: 1rem;

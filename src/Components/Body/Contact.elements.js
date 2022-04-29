@@ -1,11 +1,11 @@
 import styled from "styled-components";
 export const ContactContainer = styled.div`
-  margin-top: 2rem;
+  margin-top: 100px;
   margin-bottom: 5rem;
   width: 100%;
   height: 60vh;
   @media (max-width: 760px) {
-    margin-top: 1rem;
+    margin-top: 100px;
   }
 `;
 
@@ -35,13 +35,13 @@ export const ContactAdress = styled.div`
   width: 50%;
   padding: 2rem;
   margin: 2rem;
-  /* background-color: gainsboro; */
 
   @media (max-width: 760px) {
     width: 95%;
     margin: auto;
     padding: 0.5rem;
     margin: 0.5rem;
+    padding-bottom: 1rem;
   }
 `;
 export const ContactMessage = styled.div`

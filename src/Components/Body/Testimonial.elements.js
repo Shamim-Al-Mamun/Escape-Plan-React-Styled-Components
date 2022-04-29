@@ -1,27 +1,41 @@
 import styled from "styled-components";
+import testimonalCoverPhoto from "../Images/testimonalCoverPhoto.jpg";
 import CarouselItemPic1 from "../Images/CarouselItemPic1.jpg";
 import CarouselItemPic2 from "../Images/CarouselItemPic2.jpg";
 import CarouselItemPic3 from "../Images/CarouselItemPic3.jpg";
 import CarouselItemPic4 from "../Images/CarouselItemPic4.jpg";
 import CarouselItemPic5 from "../Images/CarouselItemPic5.jpg";
 
-import { primaryColorDark } from "../../globalStyles";
+import { primaryColorDark, backgroundColor } from "../../globalStyles";
 
 export const Testimonialcontainer = styled.div`
-  text-align: center;
-  width: 90%;
-  margin: auto;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  height: 30vh;
-  border-radius: 0.5rem;
-  @media screen and (max-width: 960px) {
+  background-color: ${backgroundColor};
+  width: 100%;
+  height: 70vh;
+  @media (max-width: 760px) {
+    height: 50vh;
+  }
+`;
+export const TestimonialSection = styled.div`
+  width: 100%;
+  height: auto;
+  @media (max-width: 760px) {
+    width: 90%;
+  }
+`;
+
+export const TestimonialArticle = styled.div`
+  margin-top: 80px;
+  @media (max-width: 760px) {
+    margin-top: 100px;
   }
 `;
 export const TestimonialTitle = styled.div`
   font-size: 2rem;
+  font-weight: 100;
   text-align: center;
   margin-bottom: 3rem;
+  padding-top: 1rem;
   @media screen and (max-width: 960px) {
     font-size: 1.5rem;
     margin-bottom: 1rem;
@@ -183,3 +197,20 @@ export const SamplePrevArrow = (props) => {
     />
   );
 };
+
+export const TestimonialImage = styled.div`
+  background-image: url(${testimonalCoverPhoto});
+  width: 90%;
+  margin: auto;
+  height: 400px;
+  margin-top: 3rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  @media (max-width: 760px) {
+    margin-top: 2rem;
+    height: 150px;
+    background-attachment: scroll;
+  }
+`;
