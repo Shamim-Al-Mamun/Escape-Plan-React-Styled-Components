@@ -42,7 +42,6 @@ export const ContactAdress = styled.div`
     margin: auto;
     padding: 0.5rem;
     margin: 0.5rem;
-    padding-bottom: 1rem;
   }
 `;
 export const ContactMessage = styled.div`

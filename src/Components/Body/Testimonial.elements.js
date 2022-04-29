@@ -10,12 +10,10 @@ import { primaryColorDark, backgroundColor } from "../../globalStyles";
 
 export const Testimonialcontainer = styled.div`
   background-color: ${backgroundColor};
-  width: 100%;
+  margin-top: 80px;
   height: auto;
-  margin: auto;
   padding-bottom: 1rem;
   @media (max-width: 760px) {
-    height: 50vh;
   }
 `;
 export const TestimonialSection = styled.div`
@@ -209,7 +207,7 @@ export const TestimonialImage = styled.div`
   margin: auto;
   height: 500px;
   min-height: 400px;
-  margin-top: 2rem;
+  margin-top: 2.5rem;
   margin-bottom: 2rem;
   background-position: center;
   background-repeat: no-repeat;
