@@ -202,7 +202,7 @@ export const TestimonialImage = styled.div`
   background-image: url(${testimonalCoverPhoto});
   width: 90%;
   margin: auto;
-  height: 400px;
+  height: 70rem;
   margin-top: 3rem;
   background-position: center;
   background-repeat: no-repeat;

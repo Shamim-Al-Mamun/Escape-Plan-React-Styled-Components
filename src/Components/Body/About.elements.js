@@ -7,6 +7,7 @@ export const AboutContainer = styled.div`
   background-color: ${backgroundColor};
   width: 100%;
   margin-top: 80px;
+  height: auto;
 `;
 export const AboutTitle = styled.h1`
   color: black;

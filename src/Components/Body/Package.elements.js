@@ -29,7 +29,8 @@ export const PricingSection = styled.div`
 export const PackageContainer = styled.div`
   background-color: ${backgroundColor};
   margin-top: 80px;
-  height: 130vh;
+  height: auto;
+  padding-bottom: 2rem;
 `;
 export const PricingWrapper = styled.div`
   display: flex;
@@ -279,7 +280,8 @@ export const PackageImage = styled.div`
   background-image: url(${packageCoverPhoto});
   width: 90%;
   margin: auto;
-  height: 400px;
+  height: 500px;
+  min-height: 400px;
   margin-top: 2rem;
   margin-bottom: 2rem;
   background-position: center;
