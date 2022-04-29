@@ -30,7 +30,7 @@ export const PackageContainer = styled.div`
   background-color: ${backgroundColor};
   margin-top: 80px;
   height: auto;
-  padding-bottom: 2rem;
+  padding-bottom: 1rem;
 `;
 export const PricingWrapper = styled.div`
   display: flex;

@@ -8,6 +8,7 @@ export const AboutContainer = styled.div`
   width: 100%;
   margin-top: 80px;
   height: auto;
+  padding-bottom: 1rem;
 `;
 export const AboutTitle = styled.h1`
   color: black;
