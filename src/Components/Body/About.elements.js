@@ -5,7 +5,7 @@ import { primaryColorDark } from "../../globalStyles";
 
 export const AboutContainer = styled.div`
   width: 100%;
-  margin-top: 1rem;
+  margin-top: 2rem;
 `;
 export const AboutTitle = styled.h1`
   color: black;
@@ -16,7 +16,7 @@ export const AboutTitle = styled.h1`
   margin: auto;
   margin-bottom: 3rem;
   @media (max-width: 760px) {
-    margin-top: 3.5rem;
+    margin-top: 5.5rem;
     margin-bottom: 1.5rem;
     font-size: 1.5rem;
   }

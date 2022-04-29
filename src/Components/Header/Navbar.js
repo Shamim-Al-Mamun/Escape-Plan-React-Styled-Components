@@ -56,24 +56,13 @@ function Navbar() {
             </MobileIcon>
             <NavMenu onClick={handleClick} click={click}>
               <NavItem>
-                <NavLinks
-                  to="home"
-                  delay={100}
-                  spy={true}
-                  smooth={true}
-                  offset={-30}
-                  duration={600}
-                  onClick={closeMobileMenu}
-                >
+                <NavLinks to="home" offset={-30} onClick={closeMobileMenu}>
                   Home
                 </NavLinks>
               </NavItem>
               <NavItem>
                 <NavLinks
                   to="testimonial"
-                  spy={true}
-                  smooth={true}
-                  duration={600}
                   offset={-80}
                   onClick={closeMobileMenu}
                 >
@@ -81,38 +70,17 @@ function Navbar() {
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="about"
-                  spy={true}
-                  smooth={true}
-                  duration={600}
-                  offset={-80}
-                  onClick={closeMobileMenu}
-                >
+                <NavLinks to="about" offset={-80} onClick={closeMobileMenu}>
                   About
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="packages"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={600}
-                  onClick={closeMobileMenu}
-                >
+                <NavLinks to="packages" offset={-80} onClick={closeMobileMenu}>
                   Packages
                 </NavLinks>
               </NavItem>
               <NavItem>
-                <NavLinks
-                  to="contact"
-                  spy={true}
-                  smooth={true}
-                  offset={-80}
-                  duration={600}
-                  onClick={closeMobileMenu}
-                >
+                <NavLinks to="contact" offset={-80} onClick={closeMobileMenu}>
                   Contact
                 </NavLinks>
               </NavItem>

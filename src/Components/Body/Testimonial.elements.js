@@ -50,6 +50,7 @@ export const CarouselItem1Pic = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 1;
   @media (max-width: 760px) {
     width: 10vh;
     height: 10vh;
@@ -66,6 +67,7 @@ export const CarouselItem2Pic = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 1;
   @media (max-width: 760px) {
     width: 10vh;
     height: 10vh;
@@ -82,6 +84,7 @@ export const CarouselItem3Pic = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 1;
   @media (max-width: 760px) {
     width: 10vh;
     height: 10vh;
@@ -98,6 +101,7 @@ export const CarouselItem4Pic = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 1;
   @media (max-width: 760px) {
     width: 10vh;
     height: 10vh;
@@ -114,6 +118,7 @@ export const CarouselItem5Pic = styled.div`
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  z-index: 1;
   @media (max-width: 760px) {
     width: 10vh;
     height: 10vh;

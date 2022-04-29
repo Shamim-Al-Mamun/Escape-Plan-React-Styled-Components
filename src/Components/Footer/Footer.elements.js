@@ -10,7 +10,7 @@ export const FooterContainer = styled.div`
   justify-content: center;
   align-items: center;
   @media (max-width: 760px) {
-    margin-top: 5rem;
+    margin-top: 9rem;
     padding: 1rem 0 0.5rem 0;
   }
 `;

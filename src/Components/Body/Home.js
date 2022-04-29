@@ -23,9 +23,9 @@ function Home() {
             </HomeDiv>
             <HomeTitle>Make Your Tour Amazing With Us</HomeTitle>
             <HomeButtonDiv>
-              <HomeButton>
-                <Link to="packages">Book Now</Link>
-              </HomeButton>
+              <Link to="packages">
+                <HomeButton>Book Now</HomeButton>
+              </Link>
             </HomeButtonDiv>
           </HomeArticale>
         </HomeSection>
