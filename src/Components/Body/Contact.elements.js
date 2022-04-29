@@ -3,7 +3,8 @@ export const ContactContainer = styled.div`
   margin-top: 100px;
   margin-bottom: 5rem;
   width: 100%;
-  height: 60vh;
+  height: auto;
+  padding-bottom: 1rem;
   @media (max-width: 760px) {
     margin-top: 100px;
   }

@@ -11,7 +11,9 @@ import { primaryColorDark, backgroundColor } from "../../globalStyles";
 export const Testimonialcontainer = styled.div`
   background-color: ${backgroundColor};
   width: 100%;
-  height: 70vh;
+  height: auto;
+  margin: auto;
+  padding-bottom: 1rem;
   @media (max-width: 760px) {
     height: 50vh;
   }
@@ -21,12 +23,15 @@ export const TestimonialSection = styled.div`
   height: auto;
   @media (max-width: 760px) {
     width: 90%;
+    margin: auto;
   }
 `;
 
 export const TestimonialArticle = styled.div`
+  margin: auto;
   margin-top: 80px;
   @media (max-width: 760px) {
+    margin: auto;
     margin-top: 100px;
   }
 `;
@@ -202,14 +207,16 @@ export const TestimonialImage = styled.div`
   background-image: url(${testimonalCoverPhoto});
   width: 90%;
   margin: auto;
-  height: 70rem;
-  margin-top: 3rem;
+  height: 500px;
+  min-height: 400px;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   @media (max-width: 760px) {
-    margin-top: 2rem;
+    margin-top: 1rem;
     height: 150px;
     background-attachment: scroll;
   }

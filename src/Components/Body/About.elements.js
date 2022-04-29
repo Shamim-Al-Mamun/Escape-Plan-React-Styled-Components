@@ -83,6 +83,7 @@ export const AboutImage = styled.div`
   width: 100%;
   margin: auto;
   height: 50vh;
+  min-height: 40vh;
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
